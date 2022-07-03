@@ -4,13 +4,13 @@ import { getItemFromStorage, setItemToStorage } from "../utilities/localStorage"
 type ColorMode = "dark" | "light"
 
 const useColorMode = () => {
-  const colorMode = getItemFromStorage("color-mode") as ColorMode || "light"
-	const [mode, setMode] = useState<ColorMode>("light")
+  const colorMode = (getItemFromStorage("color-mode") as ColorMode) || "light"
+  const [mode, setMode] = useState<ColorMode>("light")
 
   useEffect(() => setMode((colorMode as ColorMode) || "light"), [])
   useEffect(() => {
-    document.documentElement.setAttribute("data-mode", mode);
-  }, [mode]);
+    document.documentElement.setAttribute("data-mode", mode)
+  }, [mode])
   const toggleMode = () => {
     if (mode === "dark") {
       setMode("light")
