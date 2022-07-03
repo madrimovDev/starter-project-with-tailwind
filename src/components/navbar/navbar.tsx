@@ -5,6 +5,7 @@ import menuLists from "./menuLists"
 import Navlink from "./navlink"
 import useMediaQuery from '../../hooks/useMediaQuery'
 import MobileMenu from "./mobileMenu"
+import Link from "next/link"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,9 +16,11 @@ const Navbar = () => {
 
   return(
     <div className="relative md:h-20 h-14 w-full border-b border-brand-500/50 flex md:justify-center justify-between sm:px-10 px-5 items-center">
-      <a href="/" className="md:hidden">
+      <Link href="/">
+      <a className="md:hidden">
         Atomic
       </a>
+      </Link>
       <ul className="md:flex justify-center items-center gap-10 hidden">
         {
           menuLists.map((link, index) => {
