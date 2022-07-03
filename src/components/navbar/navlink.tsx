@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import React from "react"
 import { MenuListsType } from "./menuLists"
 
-const navlink = ({ link }: { link: MenuListsType }) => {
+const Navlink = ({ link }: { link: MenuListsType }) => {
   const { asPath } = useRouter()
   return (
     <Link href={link.path}>
@@ -14,4 +14,4 @@ const navlink = ({ link }: { link: MenuListsType }) => {
   )
 }
 
-export default navlink
+export default Navlink

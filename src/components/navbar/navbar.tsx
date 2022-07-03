@@ -10,7 +10,7 @@ const Navbar = () => {
         {
           menuLists.map((link, index) => {
             return (
-              <li className="text-lg hover:text-brand-300 transition">
+              <li key={link.path+index} className="text-lg hover:text-brand-300 transition">
                 <Navlink link={link} />
               </li>
             )
