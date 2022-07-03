@@ -4,7 +4,7 @@ import { NextPageWithLayout } from "./_app";
 
 const Home: NextPageWithLayout = () => {
   return (
-    <div className="">
+    <div>
       <h1>Hello world</h1>
     </div>
   );
