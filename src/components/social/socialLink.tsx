@@ -7,7 +7,8 @@ const SocialLinks = () => {
       className="min-w-[80px]
         border-r 
         border-brand-400/50
-        flex
+        hidden
+        md:flex
         flex-col
         items-center
         justify-center
