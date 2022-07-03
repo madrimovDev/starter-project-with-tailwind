@@ -6,7 +6,7 @@ type LayoutProps = {
   children: React.ReactNode
 }
 
-const layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="flex min-h-screen h-screen">
       <SocialLinks />
@@ -20,4 +20,4 @@ const layout = ({ children }: LayoutProps) => {
   )
 }
 
-export default layout
+export default Layout
