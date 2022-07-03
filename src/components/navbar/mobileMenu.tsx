@@ -28,17 +28,13 @@ const MobileMenu = ({ toggleMenu, isOpen }: MobileMenuPropsType) => {
       </div>
 
       <ul className="flex flex-col gap-2 mt-4">
-        {
-          menuLists.map((link, index) => {
-            return(
-              <li key={link.path+index}>
-                <Link href={link.path}>
-                  <MobileNavlink link={link} />
-                </Link>
-              </li>
-            )
-          })
-        }
+        {menuLists.map((link, index) => {
+          return (
+            <li key={link.path + index}>
+              <MobileNavlink link={link} />
+            </li>
+          )
+        })}
       </ul>
     </div>
   )
