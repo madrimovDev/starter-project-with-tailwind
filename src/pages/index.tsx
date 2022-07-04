@@ -1,11 +1,12 @@
 import { useEffect } from "react"
+import Article from "../components/home/article"
 import Layout from "../layouts/layout"
 import { NextPageWithLayout } from "./_app"
 
 const Home: NextPageWithLayout = () => {
   return (
     <div>
-      <h1>Hello world</h1>
+      <Article/>
     </div>
   )
 }
