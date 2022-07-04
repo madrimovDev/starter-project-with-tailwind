@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="relative md:h-20 h-14 w-full border-b border-brand-500/50 flex md:justify-center justify-between sm:px-10 px-5 items-center">
       <Link href="/">
       <a className="md:hidden">
-        Atomic
+        Deepcode
       </a>
       </Link>
       <ul className="md:flex justify-center items-center gap-10 hidden">
