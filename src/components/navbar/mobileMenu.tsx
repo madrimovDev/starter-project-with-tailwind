@@ -13,7 +13,7 @@ type MobileMenuPropsType = {
 const MobileMenu = ({ toggleMenu, isOpen }: MobileMenuPropsType) => {
   return (
     <div
-      className={`p-4 absolute max-w-[270px] w-full h-screen top-0 dark:bg-brand-900 bg-slate-100 shadow-xl duration-300 ${
+      className={`z-50 p-4 absolute max-w-[270px] w-full h-screen top-0 dark:bg-brand-900 bg-slate-100 shadow-xl duration-300 ${
         isOpen ? "right-0" : "-right-full"
       }`}
     >
